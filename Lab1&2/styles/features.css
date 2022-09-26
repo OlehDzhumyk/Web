@@ -1,0 +1,58 @@
+.features {
+    margin-top: 2rem;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background: linear-gradient(180deg, #F6F5F5 -45.04%, #FFFFFF 19.67%, #F4F3F3 88.56%);
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.features-Illustration {
+    width: 50%;
+}
+
+.features-text {
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.features-title {
+    font-weight: bold;
+    font-size: 3rem;
+    color: #0B132A;
+
+}
+
+.features-subtitle {
+    font-size: 1.5rem;
+    color: #4F5665;
+}
+
+.features-list {
+    font-size: 2rem;
+    list-style-image: url(images/check-circle.svg);
+    text-align: left;
+}
+
+.features-point {
+    display: flex;
+    gap: 10px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 999px) {
+
+    .features-Illustration {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 599px) {
+
+    .features-Illustration {
+        display: none;
+    }
+
+}

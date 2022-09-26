@@ -1,0 +1,87 @@
+
+.hero {
+    background-color: white;
+    margin-top: 10rem;
+    font-size: 2vw;
+    display: flex;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    justify-content: space-between;
+}
+
+.hero-description {
+    width: 50%;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #0B132A;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: #4F5665;
+}
+
+.hero-Illustration {
+    width: 50%;
+}
+
+.get-started-button {
+    font-size: 2rem;
+    border: none;
+    padding: 1rem 1rem;
+    background: #f53838;
+    border-radius: 10rem;
+    color: white;
+    transition-duration: 200ms;
+    box-shadow: 0 1rem 2rem rgba(245, 56, 56, 0.56);
+
+}
+
+.get-started-button:hover {
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+@media screen and (min-width: 600px) and (max-width: 999px) {
+    .hero-description {
+        width: 50%;
+    }
+
+    .get-started-button {
+        font-size: 1.5rem;
+
+    }
+
+    .get-started-button:hover {
+        cursor: pointer;
+        font-size: 2rem;
+    }
+
+
+}
+
+@media screen and (max-width: 599px) {
+
+    .hero-description {
+        width: 100%;
+    }
+
+    .get-started-button {
+        font-size: 1.5rem;
+    }
+
+    .get-started-button:hover {
+        cursor: pointer;
+        font-size: 2rem;
+    }
+
+    .hero-Illustration {
+        display: none;
+    }
+
+
+
+}

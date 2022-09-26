@@ -1,0 +1,116 @@
+.subscribe {
+    display: flex;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    margin-right: 6rem;
+    margin-left: 6rem;
+    z-index: 10;
+    background: white;
+    align-items: center;
+    border-radius: 2rem;
+}
+
+.subscribe-now-button-box {
+    justify-content: center;
+    display: flex;
+}
+
+.subscribe-now-button {
+    font-size: 1rem;
+    border: none;
+    padding: 2rem 6rem;
+    background: #F53838;
+    border-radius: 2rem;
+    color: white;
+    transition-duration: 200ms;
+    box-shadow: 0 1rem 1rem rgba(245, 56, 56, 0.56);
+
+}
+
+.subscribe-now-button:hover {
+    cursor: pointer;
+    Opacity: 0.7;
+}
+
+.subscribe-title {
+    margin-left: 10rem;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #0B132A;
+}
+
+.subscribe-subtitle {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 2rem;
+    display: flex;
+    align-items: center;
+    color: #4F5665;
+    margin-top: 10px;
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 999px) {
+
+    .subscribe-title {
+        margin-left: 0;
+        font-weight: bold;
+        font-size: 2rem;
+        color: #0B132A;
+    }
+
+    .subscribe-now-button {
+        font-size: 1rem;
+        border: none;
+        padding: 1rem 3rem;
+        transition-duration: 200ms;
+
+    }
+
+    .subscribe-now-button-box {
+        justify-content: center;
+        margin-bottom: 0;
+        margin-right: 0;
+        display: flex;
+    }
+
+
+}
+
+@media screen and (max-width: 599px) {
+
+    .subscribe {
+        flex-wrap: wrap;
+
+        padding: 0.5rem 1rem;
+        margin-right: 2rem;
+        margin-left: 1rem;
+        z-index: 10;
+        background: white;
+        align-items: center;
+        border-radius: 2rem;
+    }
+
+    .subscribe-title {
+        margin-left: 0;
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: #0B132A;
+    }
+
+    .subscribe-now-button {
+        font-size: 0.7rem;
+        border: none;
+        padding: 1rem 3rem;
+        transition-duration: 200ms;
+
+    }
+
+    .subscribe-now-button-box {
+        justify-content: center;
+        margin-bottom: 0;
+        margin-right: 0;
+        display: flex;
+    }
+
+}
