@@ -1,0 +1,338 @@
+
+header {
+    left: 0;
+    background-color: #ffffff;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    font-size: 1rem;
+    padding: 2% 1%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+    align-items: center;
+    height: 5rem;
+}
+
+.burgerNav {
+    width: 100vw;
+    height: 0;
+    top: 11vh;
+    left: 0;
+    background-color: #ffffff;
+    position: fixed;
+    transition: 0.3s;
+    display: none;
+    overflow: hidden;
+}
+
+#checker {
+    display: none;
+}
+
+.header-logo {
+width: 15%;
+}
+
+.burgerMenu {
+    display: none;
+    position: relative;
+    width: 10vw;
+    height: 10vh;
+}
+
+.burgerMenu div {
+    height: 1vh;
+    width: 100%;
+    border-radius: 1vw;
+    background-color: #F53855;
+    position: absolute;
+    transition: 0.3s;
+}
+
+.burgerMenu div:nth-of-type(1) {
+    top: 20%
+}
+
+.burgerMenu div:nth-of-type(2) {
+    top: 50%
+}
+
+.burgerMenu div:nth-of-type(3) {
+    top: 80%
+}
+
+nav {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.navigation {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+.navigation-button {
+    margin-left: 1%;
+    margin-right: 1%;
+    font-size: 1.2rem;
+    padding: 0.4rem 0.8rem;
+    color: gray;
+    background: white;
+    border: 1px solid #FFFFFF;
+    transition-duration: 200ms;
+    border-radius: 2rem;
+}
+
+.navigation-button:hover {
+    border: 1px solid #F53838;
+    cursor: pointer;
+}
+
+.navigation-button:active {
+    background: #F53838;
+    color: black;
+}
+
+.signing {
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
+
+.sign-up {
+    font-size: 1.6rem;
+    border: 1px solid #F53855;
+    border-radius: 20rem;
+    background: white;
+    padding: 0.6rem 0.8rem;
+    transition-duration: 400ms;
+}
+
+.sign-in {
+    font-size: 1.6rem;
+    background: white;
+    padding: 0.6rem 0.8rem;
+    border: 0.2rem solid #FFFFFF;
+    transition-duration: 100ms;
+    border-radius: 20rem;
+}
+
+@media screen and (min-width: 600px) and (max-width: 999px) {
+
+    .hero-description {
+        width: 50%;
+    }
+
+    header {
+        font-size: 1rem;
+        padding: 2% 1%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        align-items: center;
+        height: 6rem;
+
+    }
+
+    .burgerMenu {
+        display: block;
+    }
+
+    #checker:checked ~.burgerMenu div:nth-of-type(1) {
+        transform: rotate(45deg);
+        top: 40%;
+    }
+
+    #checker:checked ~.burgerMenu div:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    #checker:checked ~.burgerMenu div:nth-of-type(3) {
+        transform: rotate(-45deg);
+        top: 40%;
+    }
+
+    .burgerNav {
+        top: 10.85vh;
+        bottom: 0;
+        display: flex;
+        background-color: #ffffff;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .burgerNav nav {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+        margin-bottom: 0;
+        font-size: 40px;
+        height: 50%;
+        line-height: 1.5;
+    }
+
+    #checker:checked ~ .burgerNav {
+        height: 89vh;
+        width: 100%;
+    }
+
+
+    .header-logo {
+        width: 25%;
+    }
+
+    nav {
+        display: flex;
+        width: 50%;
+        justify-content: space-around;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .signing {
+        display: flex;
+        width: 30%;
+        justify-content: space-around;
+    }
+
+    .sign-up {
+        font-size: 1.6rem;
+        border: 0.2rem solid #F53855;
+        border-radius: 10rem;
+        background: white;
+        padding: 0.3rem 0.4rem;
+        transition-duration: 200ms;
+    }
+
+
+    /*.sign-up:active {*/
+    /*    background: #F53838;*/
+    /*    color: black;*/
+    /*}*/
+
+    .sign-in {
+        font-size: 1.6rem;
+        background: white;
+        padding: 0.3rem 0.4rem;
+        border: 0.2rem solid #FFFFFF;
+        transition-duration: 100ms;
+        border-radius: 10rem;
+    }
+
+    .sign-in:hover {
+        border: 0.2rem solid #F53838;
+        cursor: pointer;
+    }
+
+    /*.sign-in:active {*/
+    /*    background: #F53838;*/
+    /*    color: black;*/
+    /*}*/
+
+}
+
+@media screen and (max-width: 599px) {
+
+
+    header {
+        left: 0;
+        right: 100px;
+        font-size: 1rem;
+        padding: 2% 1%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        align-items: center;
+        height: 5rem;
+    }
+
+    .burgerMenu {
+        display: block;
+    }
+
+    #checker:checked ~.burgerMenu div:nth-of-type(1) {
+        transform: rotate(45deg);
+        top: 40%;
+    }
+
+    #checker:checked ~.burgerMenu div:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    #checker:checked ~.burgerMenu div:nth-of-type(3) {
+        transform: rotate(-45deg);
+        top: 40%;
+    }
+
+    .burgerNav {
+        bottom: 0;
+        display: flex;
+        background-color: #ffffff;
+        flex-direction: column;
+        top: 10.85vh;
+        align-items: center;
+    }
+
+    .burgerNav nav {
+
+        display: flex;
+        flex-direction: column;
+        margin-top: 9%;
+        font-size: 40px;
+        height: 50%;
+        line-height: 1.5;
+    }
+
+    #checker:checked ~ .burgerNav {
+        height: 89vh;
+        width: 100%;
+    }
+
+
+
+    .header-logo {
+        width: 25%;
+    }
+
+    nav {
+        display: flex;
+        width: 50%;
+        justify-content: space-around;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .signing {
+        display: flex;
+        width: 50%;
+        justify-content: space-around;
+    }
+
+    .sign-up {
+        font-size: 1.6rem;
+        border: 0.2rem solid #F53855;
+        border-radius: 5rem;
+        background: white;
+        padding: 0.3rem 0.4rem;
+        transition-duration: 200ms;
+    }
+
+    .sign-in {
+        font-size: 1.6rem;
+        background: white;
+        padding: 0.3rem 0.4rem;
+        border: 0.2rem solid #FFFFFF;
+        transition-duration: 100ms;
+        border-radius: 5rem;
+    }
+
+}
+
